@@ -28,10 +28,10 @@ while True :
     # print(final_msg)
     # implement file handing print 
     time.sleep(2)
-    if not os.path.exists(f"E:\Python-jecrc\RCE Project\Messages\{data[1]}"):
-        os.mkdir(f"E:\Python-jecrc\RCE Project\Messages\{data[1]}")
+    if not os.path.exists(f"E:\Python-jecrc\RCE Project\Messages\{data[1][0]}"):
+        os.mkdir(f"E:\Python-jecrc\RCE Project\Messages\{data[1][0]}")
     
-    path=os.path.join(f"E:\Python-jecrc\RCE Project\Messages\{data[1]}","msg.txt")
+    path=os.path.join(f"E:\Python-jecrc\RCE Project\Messages\{data[1][0]}","msg.txt")
     file=open(path,"a")
     file.write(f"{final_msg}\n")
     file.close()    
